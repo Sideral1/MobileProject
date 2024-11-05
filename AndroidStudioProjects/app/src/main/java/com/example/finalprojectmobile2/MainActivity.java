@@ -1,11 +1,19 @@
 package com.example.finalprojectmobile2;
 
 import android.os.Bundle;
+import android.util.Log;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager2.widget.ViewPager2;
 
 import com.example.finalprojectmobile2.fragments.FragmentAdapter;
+import com.example.finalprojectmobile2.model.UserModel;
+import com.example.finalprojectmobile2.util.FirebaseUtil;
 import com.google.android.material.tabs.TabLayout;
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.util.HashMap;
+import java.util.Map;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -71,9 +79,10 @@ public class MainActivity extends AppCompatActivity {
         // ----------------------- NAVIGATION BAR (END) -----------------------
 
 
-        //        TEST DATABASE CONNECTIVITY
-        //        Map<String,String> data = new HashMap<>();
-        //        FirebaseFirestore.getInstance().collection("test").add(data);
+        // TEST DATABASE CONNECTIVITY
+        String userId = "test1";
+
+        FirebaseUtil.getObjectUser(userId);
 
     }
 
