@@ -29,12 +29,13 @@ public class FirebaseUtil {
 
         DocumentReference docRef = getUserDocumentReference(userId);
 
-       docRef.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
-           @Override
-           public void onSuccess(DocumentSnapshot documentSnapshot) {
-               Log.d("HERE= "+documentSnapshot.toObject(UserModel.class).getUsername(), "test");
-           }
-       });
+        docRef.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+            @Override
+            public void onSuccess(DocumentSnapshot documentSnapshot) {
+                Log.d("HERE= "+documentSnapshot.toObject(UserModel.class).getUsername(), "test");
+                callback
+            }
+        });
 
 
 //       return resultModel[0];
