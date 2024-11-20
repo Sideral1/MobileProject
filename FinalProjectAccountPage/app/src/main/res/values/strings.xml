@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Final Project Account Page</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="Service_Button">My Services</string>
+    <string name="app_settings">App Settings</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="on">On</string>
+    <string name="off">Off</string>
+    <string name="system_controlled">System Controlled</string>
+    <string name="language">Language</string>
+    <string name="log_in">Log In</string>
+    <string name="personal_information">Personal Information</string>
+    <string name="log_out">Log Out</string>
+    <string name="login">Login</string>
+    <string name="log_in_to_create_and_interact_with_student_services">Log in to create and interact with student services</string>
+    <string name="email" translatable="false">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_up_to_create_and_interact_with_student_services">Sign up to create and interact with student services</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="Password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="password_must_be_at_least_8_characters">Password must be at least 8 characters</string>
+    <string name="password_must_contain_at_least_one_number">Password must contain at least one number</string>
+    <string name="password_must_contain_at_least_one_capital_letter">Password must contain at least one capital letter</string>
+    <string name="email_cannot_be_blank">Email can\'t be blank</string>
+    <string name="password_cannot_be_blank">Password can\'t be blank</string>
+    <string name="first_name_cannot_be_blank">First name can\'t be blank</string>
+    <string name="last_name_cannot_be_blank">Last name can\'t be blank</string>
+    <string name="invalid_email_format">Invalid email</string>"
+    <string name="password_mismatch">Passwords do not match</string>"
+    <string name="first_name_cannot_contain_spaces">First name cannot contain spaces</string>"
+    <string name="last_name_cannot_contain_spaces">Last name cannot contain spaces</string>"
+    <string name="email_cannot_contain_spaces">Email cannot contain spaces</string>
+    <string name="home">Home</string>
+    <string name="chat" translatable="false">Chat</string>
+    <string name="account">Account</string>
+    <string name="you_don_t_currently_have_any_services">You don\'t currently have any services</string>
+    <string name="go_back">Back</string>
+    <string name="my_services">My Services</string>
+    <string name="chat_page">Chat\n</string>
+    "
+
+</resources>

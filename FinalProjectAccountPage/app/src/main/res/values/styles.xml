@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">
+
+    </style>
+
+    <style name="TextInputLayoutErrorStyle" parent="TextAppearance.Design.Error">
+        <item name="android:layout_gravity">end</item> <!-- Align to the right -->
+    </style>
+
+    <style name="RoundedAlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">@drawable/dialog_background</item>
+    </style>
+
+    <style name="SCREEN">
+        <item name="android:background">#FFF</item>"
+    </style>
+
+    <style name="DIALOGFRAGMENT">
+        <item name="android:background">#FFF</item>"
+    </style>
+
+
+    <style name="TEXTVIEW">
+
+        <item name="android:background">@drawable/textview_background</item>
+        <item name="drawableTint">@color/black</item>
+    </style>
+
+    <style name="EDITTEXT">
+        <item name="android:background">@drawable/textfield_background</item>
+        <item name="android:drawableTint">@color/drawable_tint</item>
+    </style>
+
+    <style name="TEXT">
+        <item name="android:textColor">#000</item>
+    </style>
+
+
+
+    <style name="CARDVIEW">
+        <item name="android:background">@drawable/rv_item_background</item>
+    </style>
+
+
+    <style name="BUTTON" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/btn_background_1</item>
+        <item name="android:drawableTint">#000</item>
+        <item name="android:textColor">#211F26</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="BOTTOMBAR" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="colorControlHighlight">@color/purple</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="TABLAYOUT" parent="Widget.Design.TabLayout">
+        <item name="android:background">@drawable/dialog_background</item>
+        <item name="tabTextColor">@color/black</item>
+        <item name="tabIndicatorFullWidth">false</item>
+    </style>
+
+    <style name="APPSETTINGSDIALOG">
+        <item name="android:background">@drawable/dialog_background</item>
+    </style>
+    <!-- Your custom styles will go here -->
+
+</resources>

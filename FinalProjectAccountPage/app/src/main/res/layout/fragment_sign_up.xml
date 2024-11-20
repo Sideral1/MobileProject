@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    style="@style/DIALOGFRAGMENT"
+    >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:text="@string/sign_up"
+        android:textAlignment="center"
+        android:textColor="@color/purple"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="415dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:text="@string/sign_up_to_create_and_interact_with_student_services"
+        android:textColor="#D3D3D3" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/FirstNameInputLayout"
+        android:layout_width="351dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        app:hintEnabled="false"
+        app:passwordToggleEnabled="false">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/firstNameText"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:layout_gravity="center_horizontal"
+            android:drawableStart="@drawable/person_icon"
+            android:drawablePadding="8dp"
+            android:hint="@string/first_name"
+            android:padding="8dp"
+            style="@style/EDITTEXT"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/LastNameInputLayout"
+        android:layout_width="351dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        app:hintEnabled="false"
+        app:passwordToggleEnabled="false">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/lastNameText"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center_horizontal"
+            android:drawableStart="@drawable/person_icon"
+            android:drawablePadding="8dp"
+            android:hint="@string/last_name"
+            android:padding="8dp"
+            style="@style/EDITTEXT"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/EmailInputLayout"
+        android:layout_width="351dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        app:hintEnabled="false"
+        app:passwordToggleEnabled="false">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emailText"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center_horizontal"
+            android:drawablePadding="8dp"
+            android:hint="@string/email"
+            android:drawableStart="@drawable/email_icon"
+            android:padding="8dp"
+            style="@style/EDITTEXT" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/PasswordInputLayout"
+        android:layout_width="351dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        app:hintEnabled="false"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:drawableStart="@drawable/password_icon"
+            android:drawablePadding="8dp"
+            android:hint="@string/Password"
+            android:inputType="textPassword"
+            android:padding="8dp"
+            style="@style/EDITTEXT" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/confirmPasswordInputLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:hintEnabled="false"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/confirmPassword"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:drawableStart="@drawable/password_icon"
+            android:drawablePadding="8dp"
+            android:hint="@string/confirm_password"
+            android:inputType="textPassword"
+            android:padding="8dp"
+            style="@style/EDITTEXT" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/pwordLength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_red_dark"
+        android:textStyle="italic"
+        android:text="@string/password_must_be_at_least_8_characters"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/pwordNums"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_red_dark"
+        android:textStyle="italic"
+        android:text="@string/password_must_contain_at_least_one_number"
+        android:layout_marginStart="50dp"/>
+
+    <TextView
+        android:id="@+id/pwordCaps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_red_dark"
+        android:textStyle="italic"
+        android:text="@string/password_must_contain_at_least_one_capital_letter"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="20dp"/>
+
+
+
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="338dp"
+        android:layout_height="68dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/purple"
+        android:textColor="#FFF"
+        android:text="@string/sign_up"
+        android:textSize="18sp"
+        app:cornerRadius="20dp" />
+
+
+</LinearLayout>

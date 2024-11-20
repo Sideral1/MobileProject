@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Light mode -->
+    <!-- Screen background if dark mode is on -->
+    <style name="SCREEN">
+        <item name="android:background">#000</item>"
+    </style>
+
+    <style name="DIALOGFRAGMENT">
+        <item name="android:background">#211F26</item>"
+    </style>
+
+
+    <style name="EDITTEXT">
+        <item name="android:drawableTint">@color/drawable_tint</item>
+        <item name="android:background">@drawable/textfield_background</item>
+    </style>
+
+    <style name="TEXT">
+        <item name="android:textColor">#FFF</item>
+
+    </style>
+
+    <style name="TEXTVIEW">
+
+        <item name="android:background">@drawable/textview_background_dm</item>
+        <item name="drawableTint">@color/white</item>
+    </style>
+
+    <style name="CARDVIEW">
+        <item name="android:background">@drawable/rv_item_background_dm</item>
+    </style>
+
+    <style name="BUTTON" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/btn_background_2</item>
+        <item name="android:textColor">#FFF</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:drawableTint">#FFF</item>
+    </style>
+
+    <style name="BOTTOMBAR" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="colorControlHighlight">@color/purple</item>
+        <item name="android:background">@color/black</item>">
+    </style>
+
+    <style name="TABLAYOUT" parent="Widget.Design.TabLayout">
+        <item name="android:background">@drawable/dialog_background_dm</item>
+        <item name="tabTextColor">@color/white</item>
+        <item name="tabIndicatorFullWidth">false</item>
+    </style>
+
+    <style name="APPSETTINGSDIALOG">
+        <item name="android:background">@drawable/dialog_background_dm</item>
+    </style>
+</resources>

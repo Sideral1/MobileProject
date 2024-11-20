@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    style="@style/APPSETTINGSDIALOG">
+
+    <TextView
+        android:id="@+id/AppSettingsTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_settings"
+        android:textSize="40sp"
+        style="@style/TEXT"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/DModeSubtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dark_mode"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        style="@style/TEXT"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="10dp"/>
+
+    <RadioGroup
+        android:id="@+id/DModeRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp">
+        <RadioButton android:id="@+id/radio_DModeOn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TEXT"
+            android:text="@string/on"/>
+        <RadioButton android:id="@+id/radio_DModeOff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TEXT"
+            android:text="@string/off"/>
+        <RadioButton android:id="@+id/radio_sysControlled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TEXT"
+            android:text="@string/system_controlled"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/LanguageTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/language"
+        android:textSize="20sp"
+        style="@style/TEXT"
+        android:textStyle="bold"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="20dp"/>
+
+    <Spinner
+        android:id="@+id/LangSelectSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:spinnerMode="dropdown"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"/>
+
+
+</LinearLayout>

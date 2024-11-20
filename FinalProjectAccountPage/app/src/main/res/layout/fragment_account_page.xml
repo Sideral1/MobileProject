@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/SCREEN"
+    android:id="@+id/account"
+    tools:context=".AccountPageFragment"
+    >
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        style="@style/SCREEN"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/SCREEN">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/top_background" />
+
+            <ImageView
+                android:id="@+id/ProfilePictureImageView"
+                android:layout_width="240dp"
+                android:layout_height="208dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/imageView"
+                app:layout_constraintTop_toBottomOf="@+id/imageView"
+                app:srcCompat="@mipmap/profile_picture" />
+
+            <TextView
+                android:id="@+id/FirstNameLastNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                style="@style/TEXT"
+                android:text=""
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/ProfilePictureImageView"
+                app:layout_constraintStart_toStartOf="@+id/ProfilePictureImageView"
+                app:layout_constraintTop_toBottomOf="@+id/ProfilePictureImageView" />
+
+            <TextView
+                android:id="@+id/EmailTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="20sp"
+                style="@style/TEXT"
+                app:layout_constraintEnd_toEndOf="@+id/FirstNameLastNameTextView"
+                app:layout_constraintStart_toStartOf="@+id/FirstNameLastNameTextView"
+                app:layout_constraintTop_toBottomOf="@+id/FirstNameLastNameTextView" />
+
+
+
+            <ViewAnimator
+                android:id="@+id/viewAnimator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/EmailTextView"
+                app:layout_constraintVertical_bias="0.966"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    style="@style/SCREEN"
+                    >
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/my_services_button"
+                        style="@style/BUTTON"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="32dp"
+                        android:layout_marginBottom="10dp"
+                        android:drawableStart="@drawable/my_services_icon"
+                        android:drawablePadding="20dp"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="0dp"
+                        android:text="@string/Service_Button"
+                        android:textAlignment="viewStart"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/LogInButton"
+                        android:visibility="gone"
+                        style="@style/BUTTON"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="32dp"
+                        android:layout_marginBottom="10dp"
+                        android:drawableStart="@drawable/log_in_icon"
+                        android:drawablePadding="20dp"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="0dp"
+                        android:text="@string/log_in"
+                        android:textAlignment="viewStart"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/account_settings_button"
+                        style="@style/BUTTON"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="32dp"
+                        android:layout_marginBottom="10dp"
+                        android:drawableStart="@drawable/account_settings_icon"
+                        android:drawablePadding="20dp"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="0dp"
+                        android:text="@string/app_settings"
+                        android:textAlignment="viewStart"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/personal_information_button"
+                        style="@style/BUTTON"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="32dp"
+                        android:layout_marginBottom="10dp"
+                        android:drawableStart="@drawable/personal_information_icon"
+                        android:drawablePadding="20dp"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="0dp"
+                        android:text="@string/personal_information"
+                        android:textAlignment="viewStart"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/logout_button"
+                        style="@style/BUTTON"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="32dp"
+                        android:layout_marginBottom="10dp"
+                        android:drawableStart="@drawable/logout_icon"
+                        android:drawablePadding="20dp"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="0dp"
+                        android:text="@string/log_out"
+                        android:textAlignment="viewStart"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal"
+                    android:visibility="gone">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/UserNameInformationLayout"
+                        android:layout_width="351dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="20dp"
+                        app:hintEnabled="false">
+
+                        <TextView
+                            android:id="@+id/UserNameInformation"
+                            android:layout_width="350dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center_vertical"
+                            style="@style/TEXTVIEW"
+                            android:drawablePadding="8dp"
+                            android:text="FirstName LastName"
+                            android:padding="8dp"
+                            app:drawableStartCompat="@drawable/person_icon"
+
+
+                            />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/EmailInformationLayout"
+                        android:layout_width="351dp"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_gravity="center_horizontal"
+                        app:hintEnabled="false">
+
+                        <TextView
+                            android:id="@+id/emailInformation"
+                            android:layout_width="350dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center_vertical"
+                            style="@style/TEXTVIEW"
+                            android:drawablePadding="8dp"
+                            android:padding="8dp"
+                            android:text="email@address.com"
+                            app:drawableStartCompat="@drawable/email_icon" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/PasswordInformationLayout"
+                        android:layout_width="351dp"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_gravity="center_horizontal"
+
+                        app:hintEnabled="false">
+
+                        <TextView
+                            android:id="@+id/PasswordInformation"
+                            android:layout_width="350dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center_vertical"
+                            style="@style/TEXTVIEW"
+                            android:text="@string/Password"
+                            android:drawablePadding="8dp"
+                            android:padding="8dp"
+                            app:drawableStartCompat="@drawable/password_icon" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/goback_button"
+                        style="@style/BUTTON"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="32dp"
+                        android:layout_marginBottom="10dp"
+                        android:drawableStart="@drawable/back_icon"
+                        android:drawablePadding="20dp"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="0dp"
+                        android:text="@string/go_back"
+                        android:textAlignment="viewStart"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+
+
+                </LinearLayout>
+            </ViewAnimator>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
